@@ -47,4 +47,4 @@ Thumbs.db
 .env
 
 # logs
-/logs
+*.log
