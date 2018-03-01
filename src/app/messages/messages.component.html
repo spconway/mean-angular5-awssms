@@ -1,0 +1,36 @@
+<div class="row h-100 justify-content-center">
+	<div class="col-lg-6 col-md-6 col-sm-12">
+		<form>
+		  <div class="form-group">
+		    <label for="phone">SNS Endpoint (Phone #)</label>
+		    <input [(ngModel)]="message.phone" name="phone" type="tel" required="true" class="form-control" id="phone" placeholder="1112223333">
+		  </div>
+		  <div class="form-group">
+		    <label for="message">Message</label>
+				<textarea [(ngModel)]="message.message" name="message" class="form-control" id="message" required="true" rows="3" placeholder="Enter message"></textarea>
+		  </div>
+		  <div class="form-group">
+			  <label for="date" class="col-form-label">Date and time</label>
+			  <input [(ngModel)]="message.date" name="date" class="form-control" type="datetime-local" value="0000-00-00T00:00" id="date">
+			  <small id="dateHelp" class="form-text text-muted">If you wish to send a push notification immediately, leave this field blank. Otherwise enter a date in the form of yyyy-mm-dd hh:mm am/pm.</small>
+			</div>
+		  <button type="submit" class="btn btn-primary" (click)="sendMessage()">Submit</button>
+		</form>
+		<p class="text-success" id="messageStatus"></p>
+		<p class="text-danger" id="error"></p>
+		<p class="font-weight-bold text-info" id="messageId"></p>
+	</div>
+	<div class="col-lg-6 col-md-6 col-sm-12">
+		<p>Your previous {{ usrMsgCnt }} message recipients:</p>
+		<div *ngFor="let message of usrMsgs">
+			<ol>
+				<li>{{ message.phone }}</li>
+				<ul>
+					<li>{{ message.id }}</li>
+					<li>{{ message.message }}</li>
+					<li>{{ message.messageStatus }}</li>
+				</ul>
+			</ol>
+		</div>
+	</div>
+</div>

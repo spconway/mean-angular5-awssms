@@ -1,0 +1,119 @@
+2018-2-24 12:48:04 - info: Listening on  port 3000
+2018-2-24 12:50:34 - info: Listening on  port 3000
+2018-2-24 12:50:38 - info: ::1 - - [24/Feb/2018:17:50:38 +0000] "GET /message HTTP/1.1" 404 1613 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 12:50:38 - info: ::1 - - [24/Feb/2018:17:50:38 +0000] "GET /favicon.ico HTTP/1.1" 404 1613 "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 12:59:07 - info: Listening on  port 3000
+2018-2-24 12:59:15 - info: ::1 - - [24/Feb/2018:17:59:15 +0000] "GET /message HTTP/1.1" 404 1613 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:00:04 - info: ::1 - - [24/Feb/2018:18:00:04 +0000] "GET / HTTP/1.1" 404 1613 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:04:33 - info: Listening on  port 3000
+2018-2-24 13:04:34 - info: ::1 - - [24/Feb/2018:18:04:34 +0000] "GET / HTTP/1.1" 404 5 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:04:54 - info: ::1 - - [24/Feb/2018:18:04:54 +0000] "GET /message HTTP/1.1" 404 5 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:05:27 - info: Listening on  port 3000
+2018-2-24 13:05:32 - info: ::1 - - [24/Feb/2018:18:05:32 +0000] "GET /message HTTP/1.1" 404 5 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:06:49 - info: Listening on  port 3000
+2018-2-24 13:07:03 - info: ::1 - - [24/Feb/2018:18:07:03 +0000] "GET /message HTTP/1.1" 404 5 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:07:10 - info: ::1 - - [24/Feb/2018:18:07:10 +0000] "GET /message HTTP/1.1" 404 5 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:08:09 - info: Listening on  port 3000
+2018-2-24 13:08:25 - info: ::1 - - [24/Feb/2018:18:08:25 +0000] "GET /message HTTP/1.1" 404 5 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:10:06 - info: ::1 - - [24/Feb/2018:18:10:06 +0000] "GET /message/ HTTP/1.1" 404 5 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:12:21 - info: Listening on  port 3000
+2018-2-24 13:12:22 - info: ::1 - - [24/Feb/2018:18:12:22 +0000] "GET /message/ HTTP/1.1" 404 5 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:12:25 - info: ::1 - - [24/Feb/2018:18:12:25 +0000] "GET /message HTTP/1.1" 404 5 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:13:41 - info: Listening on  port 3000
+2018-2-24 13:13:42 - info: ::1 - - [24/Feb/2018:18:13:42 +0000] "GET /message HTTP/1.1" 200 8 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:22:24 - error: connection error: MongoError: Authentication failed.
+    at /Users/Spconway/Desktop/ProgrammingStuff/Angular/mean-angular5-awssms/node_modules/mongoose/node_modules/mongodb-core/lib/connection/pool.js:595:61
+    at authenticateStragglers (/Users/Spconway/Desktop/ProgrammingStuff/Angular/mean-angular5-awssms/node_modules/mongoose/node_modules/mongodb-core/lib/connection/pool.js:513:16)
+    at Connection.messageHandler (/Users/Spconway/Desktop/ProgrammingStuff/Angular/mean-angular5-awssms/node_modules/mongoose/node_modules/mongodb-core/lib/connection/pool.js:549:5)
+    at emitMessageHandler (/Users/Spconway/Desktop/ProgrammingStuff/Angular/mean-angular5-awssms/node_modules/mongoose/node_modules/mongodb-core/lib/connection/connection.js:309:10)
+    at Socket.<anonymous> (/Users/Spconway/Desktop/ProgrammingStuff/Angular/mean-angular5-awssms/node_modules/mongoose/node_modules/mongodb-core/lib/connection/connection.js:452:17)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:252:12)
+    at readableAddChunk (_stream_readable.js:239:11)
+    at Socket.Readable.push (_stream_readable.js:197:10)
+    at TCP.onread (net.js:589:20)
+2018-2-24 13:23:08 - info: Listening on  port 3000
+2018-2-24 13:23:08 - error: connection error: MongoError: Authentication failed.
+    at /Users/Spconway/Desktop/ProgrammingStuff/Angular/mean-angular5-awssms/node_modules/mongoose/node_modules/mongodb-core/lib/connection/pool.js:595:61
+    at authenticateStragglers (/Users/Spconway/Desktop/ProgrammingStuff/Angular/mean-angular5-awssms/node_modules/mongoose/node_modules/mongodb-core/lib/connection/pool.js:513:16)
+    at Connection.messageHandler (/Users/Spconway/Desktop/ProgrammingStuff/Angular/mean-angular5-awssms/node_modules/mongoose/node_modules/mongodb-core/lib/connection/pool.js:549:5)
+    at emitMessageHandler (/Users/Spconway/Desktop/ProgrammingStuff/Angular/mean-angular5-awssms/node_modules/mongoose/node_modules/mongodb-core/lib/connection/connection.js:309:10)
+    at Socket.<anonymous> (/Users/Spconway/Desktop/ProgrammingStuff/Angular/mean-angular5-awssms/node_modules/mongoose/node_modules/mongodb-core/lib/connection/connection.js:452:17)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:252:12)
+    at readableAddChunk (_stream_readable.js:239:11)
+    at Socket.Readable.push (_stream_readable.js:197:10)
+    at TCP.onread (net.js:589:20)
+2018-2-24 13:24:40 - info: Listening on  port 3000
+2018-2-24 13:24:40 - info: established database connection.
+2018-2-24 13:24:40 - info: host:  ds247648.mlab.com
+2018-2-24 13:24:40 - info: name:  mean-angular5-awssms
+2018-2-24 13:24:40 - info: port:  47648
+2018-2-24 13:24:40 - info: pool size:  10
+2018-2-24 13:34:24 - info: Listening on  port 3000
+2018-2-24 13:34:28 - info: ::1 - - [24/Feb/2018:18:34:28 +0000] "GET /message HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:35:16 - info: Listening on  port 3000
+2018-2-24 13:35:20 - info: ::1 - - [24/Feb/2018:18:35:20 +0000] "GET /message HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:35:25 - info: ::1 - - [24/Feb/2018:18:35:25 +0000] "GET /users HTTP/1.1" 200 64 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:44:38 - info: Listening on  port 3000
+2018-2-24 13:44:44 - info: ::1 - - [24/Feb/2018:18:44:44 +0000] "GET /users?userName=stephen HTTP/1.1" 200 81 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:45:20 - info: ::1 - - [24/Feb/2018:18:45:20 +0000] "GET /users?userName=stephen HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:45:47 - info: ::1 - - [24/Feb/2018:18:45:47 +0000] "GET /users/?userName=stephen HTTP/1.1" 200 81 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:47:17 - info: Listening on  port 3000
+2018-2-24 13:47:19 - info: ::1 - - [24/Feb/2018:18:47:19 +0000] "GET /users/user?userName=stephen HTTP/1.1" 200 89 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:48:42 - info: Listening on  port 3000
+2018-2-24 13:48:56 - info: ::1 - - [24/Feb/2018:18:48:56 +0000] "GET /users/user?userName=stephen HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:49:00 - info: ::1 - - [24/Feb/2018:18:49:00 +0000] "GET /users/user?userName=stephen HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:52:34 - info: ::1 - - [24/Feb/2018:18:52:34 +0000] "GET /users/user HTTP/1.1" 200 89 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:52:59 - info: ::1 - - [24/Feb/2018:18:52:59 +0000] "GET /users/user?userName=test HTTP/1.1" 200 89 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:54:54 - info: Listening on  port 3000
+2018-2-24 13:54:58 - info: ::1 - - [24/Feb/2018:18:54:58 +0000] "GET /users/user?userName=test HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:56:12 - info: Listening on  port 3000
+2018-2-24 13:57:03 - info: Listening on  port 3000
+2018-2-24 13:57:11 - info: ::1 - - [24/Feb/2018:18:57:11 +0000] "GET /users/user?userName=test HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:57:14 - info: ::1 - - [24/Feb/2018:18:57:14 +0000] "GET /users/user?userName=test HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 13:58:41 - info: ::1 - - [24/Feb/2018:18:58:41 +0000] "GET /users/user HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 14:00:09 - info: Listening on  port 3000
+2018-2-24 14:00:24 - info: ::1 - - [24/Feb/2018:19:00:24 +0000] "GET /users/user HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 14:00:30 - info: ::1 - - [24/Feb/2018:19:00:30 +0000] "GET /users/user?userName=test HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 18:29:26 - info: Listening on  port 3000
+2018-2-24 18:29:29 - info: ::1 - - [24/Feb/2018:23:29:29 +0000] "GET /users/user?userName=test HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 18:29:38 - info: ::1 - - [24/Feb/2018:23:29:38 +0000] "GET /users/user?userName=test HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-24 18:31:19 - info: Listening on  port 3000
+2018-2-24 18:31:47 - info: ::1 - - [24/Feb/2018:23:31:47 +0000] "GET /users/user?userName=test HTTP/1.1" 200 88 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
