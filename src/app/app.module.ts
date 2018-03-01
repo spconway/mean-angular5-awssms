@@ -12,6 +12,7 @@ import { MessageDetailComponent } from './message-detail/message-detail.componen
 import { MessageService } from './message.service';
 import { GlobalMessageService } from './global-message.service';
 import { GlobalMessagesComponent } from './global-messages/global-messages.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { GlobalMessagesComponent } from './global-messages/global-messages.compo
     AppNavbarComponent,
     MessagesComponent,
     MessageDetailComponent,
-    GlobalMessagesComponent
+    GlobalMessagesComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

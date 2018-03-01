@@ -2640,3 +2640,99 @@
 
 2018-2-27 23:19:39 - info: ::1 - - [28/Feb/2018:04:19:39 +0000] "GET /vendor.bundle.js.map HTTP/1.1" 200 4400740 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
 
+2018-2-28 21:41:15 - info: Listening on  port 3000
+2018-2-28 21:41:15 - info: established database connection.
+2018-2-28 21:41:15 - info: host:  ds247648.mlab.com
+2018-2-28 21:41:15 - info: name:  mean-angular5-awssms
+2018-2-28 21:41:15 - info: port:  47648
+2018-2-28 21:41:15 - info: pool size:  10
+2018-2-28 21:41:41 - info: ::1 - - [01/Mar/2018:02:41:41 +0000] "GET /message HTTP/1.1" 200 703 "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:41:41 - info: ::1 - - [01/Mar/2018:02:41:41 +0000] "GET /inline.bundle.js HTTP/1.1" 200 3887 "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:41:41 - info: ::1 - - [01/Mar/2018:02:41:41 +0000] "GET /main.bundle.js HTTP/1.1" 200 30089 "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:41:41 - info: ::1 - - [01/Mar/2018:02:41:41 +0000] "GET /polyfills.bundle.js HTTP/1.1" 200 202445 "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:41:41 - info: ::1 - - [01/Mar/2018:02:41:41 +0000] "GET /styles.bundle.js HTTP/1.1" 200 204690 "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:41:41 - info: ::1 - - [01/Mar/2018:02:41:41 +0000] "GET /scripts.bundle.js HTTP/1.1" 200 202022 "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:41:41 - info: ::1 - - [01/Mar/2018:02:41:41 +0000] "GET /inline.bundle.js.map HTTP/1.1" 200 3952 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:41:41 - info: ::1 - - [01/Mar/2018:02:41:41 +0000] "GET /polyfills.bundle.js.map HTTP/1.1" 200 232581 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:41:41 - info: ::1 - - [01/Mar/2018:02:41:41 +0000] "GET /styles.bundle.js.map HTTP/1.1" 200 264677 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:41:41 - info: ::1 - - [01/Mar/2018:02:41:41 +0000] "GET /scripts.bundle.js.map HTTP/1.1" 200 241637 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:41:41 - info: ::1 - - [01/Mar/2018:02:41:41 +0000] "GET /vendor.bundle.js HTTP/1.1" 200 3660851 "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:41:42 - info: ::1 - - [01/Mar/2018:02:41:42 +0000] "GET /main.bundle.js.map HTTP/1.1" 200 21345 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:41:42 - info: ::1 - - [01/Mar/2018:02:41:42 +0000] "GET /messages HTTP/1.1" 304 - "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:41:42 - info: ::1 - - [01/Mar/2018:02:41:42 +0000] "GET /vendor.bundle.js.map HTTP/1.1" 200 4400740 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:42:32 - info: ::1 - - [01/Mar/2018:02:42:32 +0000] "GET /message HTTP/1.1" 304 - "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:42:32 - info: ::1 - - [01/Mar/2018:02:42:32 +0000] "GET /inline.bundle.js HTTP/1.1" 304 - "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:42:32 - info: ::1 - - [01/Mar/2018:02:42:32 +0000] "GET /polyfills.bundle.js HTTP/1.1" 304 - "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:42:32 - info: ::1 - - [01/Mar/2018:02:42:32 +0000] "GET /main.bundle.js HTTP/1.1" 304 - "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:42:32 - info: ::1 - - [01/Mar/2018:02:42:32 +0000] "GET /styles.bundle.js HTTP/1.1" 304 - "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:42:32 - info: ::1 - - [01/Mar/2018:02:42:32 +0000] "GET /scripts.bundle.js HTTP/1.1" 304 - "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:42:32 - info: ::1 - - [01/Mar/2018:02:42:32 +0000] "GET /vendor.bundle.js HTTP/1.1" 304 - "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:42:32 - info: ::1 - - [01/Mar/2018:02:42:32 +0000] "GET /inline.bundle.js.map HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:42:32 - info: ::1 - - [01/Mar/2018:02:42:32 +0000] "GET /polyfills.bundle.js.map HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:42:32 - info: ::1 - - [01/Mar/2018:02:42:32 +0000] "GET /styles.bundle.js.map HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:42:32 - info: ::1 - - [01/Mar/2018:02:42:32 +0000] "GET /scripts.bundle.js.map HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:42:33 - info: ::1 - - [01/Mar/2018:02:42:33 +0000] "GET /vendor.bundle.js.map HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:42:33 - info: ::1 - - [01/Mar/2018:02:42:33 +0000] "GET /main.bundle.js.map HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:42:33 - info: ::1 - - [01/Mar/2018:02:42:33 +0000] "GET /messages HTTP/1.1" 304 - "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:44:56 - info: Listening on  port 3000
+2018-2-28 21:44:56 - info: established database connection.
+2018-2-28 21:44:56 - info: host:  ds247648.mlab.com
+2018-2-28 21:44:56 - info: name:  mean-angular5-awssms
+2018-2-28 21:44:56 - info: port:  47648
+2018-2-28 21:44:56 - info: pool size:  10
+2018-2-28 21:45:08 - info: ::1 - - [01/Mar/2018:02:45:08 +0000] "GET /message HTTP/1.1" 200 703 "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:45:08 - info: ::1 - - [01/Mar/2018:02:45:08 +0000] "GET /inline.bundle.js HTTP/1.1" 200 3887 "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:45:08 - info: ::1 - - [01/Mar/2018:02:45:08 +0000] "GET /main.bundle.js HTTP/1.1" 200 30140 "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:45:08 - info: ::1 - - [01/Mar/2018:02:45:08 +0000] "GET /polyfills.bundle.js HTTP/1.1" 200 202445 "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:45:08 - info: ::1 - - [01/Mar/2018:02:45:08 +0000] "GET /styles.bundle.js HTTP/1.1" 200 204690 "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:45:08 - info: ::1 - - [01/Mar/2018:02:45:08 +0000] "GET /scripts.bundle.js HTTP/1.1" 200 202022 "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:45:08 - info: ::1 - - [01/Mar/2018:02:45:08 +0000] "GET /inline.bundle.js.map HTTP/1.1" 200 3952 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:45:08 - info: ::1 - - [01/Mar/2018:02:45:08 +0000] "GET /polyfills.bundle.js.map HTTP/1.1" 200 232581 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:45:08 - info: ::1 - - [01/Mar/2018:02:45:08 +0000] "GET /styles.bundle.js.map HTTP/1.1" 200 264677 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:45:08 - info: ::1 - - [01/Mar/2018:02:45:08 +0000] "GET /scripts.bundle.js.map HTTP/1.1" 200 241637 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:45:08 - info: ::1 - - [01/Mar/2018:02:45:08 +0000] "GET /vendor.bundle.js HTTP/1.1" 200 3660851 "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:45:09 - info: ::1 - - [01/Mar/2018:02:45:09 +0000] "GET /main.bundle.js.map HTTP/1.1" 200 21410 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:45:09 - info: ::1 - - [01/Mar/2018:02:45:09 +0000] "GET /messages HTTP/1.1" 304 - "http://localhost:3000/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
+2018-2-28 21:45:09 - info: ::1 - - [01/Mar/2018:02:45:09 +0000] "GET /vendor.bundle.js.map HTTP/1.1" 200 4400740 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36 FirePHP/4Chrome"
+
