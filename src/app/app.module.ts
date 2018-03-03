@@ -13,6 +13,7 @@ import { MessageService } from './message.service';
 import { GlobalMessageService } from './global-message.service';
 import { GlobalMessagesComponent } from './global-messages/global-messages.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { LoginComponent } from './login/login.component';
     MessagesComponent,
     MessageDetailComponent,
     GlobalMessagesComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

@@ -11,14 +11,7 @@ export class MessagesComponent implements OnInit {
 	usrMsgCnt;
 	usrMsgs: Message[];
 
-	message: Message = {
-		id: null,
-		date: null,
-		phone: null,
-		message: null,
-		messageStatus: null,
-		error: null
-	};
+  message = new Message('', '', '', 'PENDING', '', '');
 
   constructor(private messageService: MessageService) { }
 
@@ -36,12 +29,8 @@ export class MessagesComponent implements OnInit {
   	this.getMessages();
   }
 
-  sendMessage() {
-  	this.message.messageStatus = 'PENDING';
-  	console.log("Message: ", this.message);
-  	this.usrMsgs.push(this.message);
-  	this.usrMsgCnt = this.usrMsgs.length;
-  	this.clearInputs();
+  sendMessage(m: Message): void {
+  	console.log("New message is being sent: ", m);
   }
 
   getMessages(): void {
@@ -52,13 +41,14 @@ export class MessagesComponent implements OnInit {
   		});
   }
 
-  clearInputs() {
-		this.message.id = null;
-		this.message.date = null;
-		this.message.phone = null;
-		this.message.message = null;
-		this.message.messageStatus = null;
-		this.message.error = null;
+  submitted = false;
+
+  onSubmit() {
+    this.submitted = true;
+    this.usrMsgs.push(this.message);
+    this.usrMsgCnt = this.usrMsgs.length;
+    this.sendMessage(this.message);
+    this.message = new Message('', '', '', 'PENDING', '', '');
   }
 
 }
