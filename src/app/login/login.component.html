@@ -4,13 +4,13 @@
 		<form>
 			<div class="form-group">
 				<label>E-mail</label>
-				<input class="form-control" type="text" name="email" placeholder="E-mail" required="">
+				<input class="form-control" type="text" name="email" placeholder="E-mail" required>
 			</div>
 			<div class="form-group">
 				<label>Password</label>
-				<input class="form-control" type="password" name="password" placeholder="Password" required="">
+				<input class="form-control" type="password" name="password" placeholder="Password" required>
 			</div>
-			<button type="submit" class="btn btn-outline-primary" ng-click="login()">log in</button><a class="alert-link" [routerLink]="['/register']">Register</a>
+			<button type="submit" class="btn btn-outline-primary" (ngClick)="login()">log in</button><a class="alert-link" [routerLink]="['/register']">Register</a>
 		</form>
 	</div>
 </div>

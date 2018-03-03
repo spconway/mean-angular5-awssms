@@ -17,22 +17,22 @@ import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AppNavbarComponent,
-    MessagesComponent,
-    MessageDetailComponent,
-    GlobalMessagesComponent,
-    LoginComponent,
-    RegisterComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
-  providers: [MessageService, GlobalMessageService],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		AppNavbarComponent,
+		MessagesComponent,
+		MessageDetailComponent,
+		GlobalMessagesComponent,
+		LoginComponent,
+		RegisterComponent
+	],
+	imports: [
+		BrowserModule,
+		FormsModule,
+		AppRoutingModule,
+		HttpClientModule
+	],
+	providers: [MessageService, GlobalMessageService],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }

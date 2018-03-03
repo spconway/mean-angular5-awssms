@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-message-detail',
-  templateUrl: './message-detail.component.html',
-  styleUrls: ['./message-detail.component.css']
+	selector: 'app-message-detail',
+	templateUrl: './message-detail.component.html',
+	styleUrls: ['./message-detail.component.css']
 })
 export class MessageDetailComponent implements OnInit {
 
-  constructor() { }
+	constructor() { }
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+	}
 
 }
