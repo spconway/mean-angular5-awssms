@@ -33,7 +33,7 @@ export class MessagesComponent implements OnInit {
 	}
 
 	sendMessage(m: Message) {
-		console.log('New message is being sent: ', m);
+		console.log('New message is being sent: ', m.toString());
 	}
 
 	getMessages(): void {
@@ -46,10 +46,11 @@ export class MessagesComponent implements OnInit {
 
   onSubmit() {
     if (this.messageForm.valid) {
-      // var f = this.messageForm.value;
-      //this.message = new Message(f.phone, f.message, '', 'PENDING');
-      //console.log("Form Submitted!", this.message);
-      //this.sendMessage(this.message);
+      var f = this.messageForm.value;
+      console.log("f: ", f.date);
+      this.message = new Message(f.phone, f.message, f.date, 'PENDING');
+      console.log("Form Submitted!", this.message.toString());
+      this.sendMessage(this.message);
     }
   }
 }

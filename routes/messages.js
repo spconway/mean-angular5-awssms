@@ -22,6 +22,7 @@ router.get('/', function(req, res, next) {
 			res.status(400).send('Error in request. Possibly no messages.');
 		} else{
 			// res.status(200).json(data);
+      console.log('About to send response from messages route.');
 			res.status(200).json(response);
 		}
 	});
@@ -38,7 +39,7 @@ router.post('/', function(req, res, next) {
       executionDate: req.body.date,
       message: req.body.message,
       phone: req.body.phone
-    }
+    };
     //use schema.create to insert data into the db
     Message.create(messageData, function (err, message) {
       if (err) {
@@ -50,13 +51,13 @@ router.post('/', function(req, res, next) {
 			    error: null,
 			    messageId: null,
 			  	date: req.body.date,
-			  	message: 'Your record will be sent on: ' + response.date
-        }
+			  	messageStatus: 'Your record will be sent on: ' + response.date
+        };
         /* update parent record */
         User.findByIdAndUpdate(req.session.userId, { messages: message }, function(err, doc) {
           if(err){
             console.log('error finding by one and updating: ', err);
-            response.message = 'There was an error processing your request.'
+            response.message = 'There was an error processing your request.';
             res.status(500).json(response);
           }else{
             console.log('successfully found and updated parent record');
@@ -66,7 +67,7 @@ router.post('/', function(req, res, next) {
       }
     });
   } else {
-    response.message = 'There was an error processing your request.'
+    response.messageStatus = 'There was an error processing your request.';
     res.status(500).json(response);
   }
 });
