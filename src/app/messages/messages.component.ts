@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Message } from '../message';
 import { MessageService } from '../message.service';
+import { FormGroup, FormControl, Validators } from "@angular/forms";
+import { message } from "aws-sdk/clients/sns";
+import { MessageFormat } from "aws-sdk/clients/iot";
 
 @Component({
 	selector: 'app-messages',
@@ -11,26 +14,25 @@ export class MessagesComponent implements OnInit {
 	usrMsgCnt;
 	usrMsgs: Message[];
 	submitted = false;
+	message: Message;
+	messageForm: FormGroup;
 
-	message = new Message('', '', '', 'PENDING', '', '');
-
-	constructor(private messageService: MessageService) { }
+  constructor(private messageService: MessageService) { }
 
 	ngOnInit() {
-		// var plcHldrMsg: Message = {
-			// id: '43jk-32jk-333-fdss',
-			// phone: '7742328575',
-			// message: 'test',
-			// date: 'today',
-			// messageStatus: 'DELIVERED',
-			// error: null
-		// };
-
-		// this.usrMsgs.push(plcHldrMsg);
 		this.getMessages();
+    this.messageForm = new FormGroup({
+      phone: new FormControl('', [
+        Validators.required
+      ]),
+      message: new FormControl('', [
+        Validators.required
+      ]),
+      date: new FormControl('')
+    });
 	}
 
-	sendMessage(m: Message): void {
+	sendMessage(m: Message) {
 		console.log('New message is being sent: ', m);
 	}
 
@@ -42,12 +44,12 @@ export class MessagesComponent implements OnInit {
 			});
 	}
 
-	onSubmit() {
-		this.submitted = true;
-		this.usrMsgs.push(this.message);
-		this.usrMsgCnt = this.usrMsgs.length;
-		this.sendMessage(this.message);
-		this.message = new Message('', '', '', 'PENDING', '', '');
-	}
-
+  onSubmit() {
+    if (this.messageForm.valid) {
+      // var f = this.messageForm.value;
+      //this.message = new Message(f.phone, f.message, '', 'PENDING');
+      //console.log("Form Submitted!", this.message);
+      //this.sendMessage(this.message);
+    }
+  }
 }
