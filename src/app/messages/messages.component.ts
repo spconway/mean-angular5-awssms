@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Message } from '../message';
 import { MessageService } from '../message.service';
 import { FormGroup, FormControl, Validators } from "@angular/forms";
-import { message } from "aws-sdk/clients/sns";
-import { MessageFormat } from "aws-sdk/clients/iot";
 
 @Component({
 	selector: 'app-messages',
