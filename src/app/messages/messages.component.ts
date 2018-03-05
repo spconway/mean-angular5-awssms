@@ -31,7 +31,8 @@ export class MessagesComponent implements OnInit {
 	}
 
 	sendMessage(m: Message) {
-		console.log('New message is being sent: ', m.toString());
+		//this.messageService.sendMessage(m);
+    this.getMessages();
 	}
 
 	getMessages(): void {
@@ -44,7 +45,7 @@ export class MessagesComponent implements OnInit {
 
   onSubmit() {
     if (this.messageForm.valid) {
-      var f = this.messageForm.value;
+      let f = this.messageForm.value;
       console.log("f: ", f.date);
       this.message = new Message(f.phone, f.message, f.date, 'PENDING');
       console.log("Form Submitted!", this.message.toString());

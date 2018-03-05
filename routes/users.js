@@ -19,26 +19,53 @@ router.get('/', function(req, res, next) {
 
 /**
  * GET
- * '/username/account'
+ * '/login'
  * return 200 with secure user information
  */
-router.get('/username/account', function(req, res, next) {
-	let input = {
-		email: req.body.email,
-		username: req.body.username,
-		password: req.body.password,
-		passwordConf: req.body.passwordConf
-	};
+router.post('/login', function(req, res, next) {
+	if((req.body.email || req.body.username) && req.body.password) {
+    User.authenticate(req.body.email, req.body.password, function (err, user) {
+      if (err || !user) {
+        let err = new Error('Wrong email or password.');
+        err.status = 401;
+        console.log("Error: ", err);
+        return res.status(401).send("Authentication unsuccessful.");
+      } else {
+        req.session.userId = user._id;
+        user.password = null;
+        user.passwordConf = null;
+        return res.status(200).json(user);
+      }
+    });
+  }
+});
 
-	validateLogin(input) ? authenticateUser(input) : res.status(401).send("Invalid user.");
+/**
+ * DELETE
+ * '/login'
+ * return 200 after deleting user token
+ */
+router.delete('/login', function(req, res, next) {
+  if (req.session) {
+    // delete session object
+    req.session.destroy(function(err) {
+      if(err) {
+        return next(err);
+      } else {
+        return res.status(200).send('Log out successful.');
+      }
+    });
+  } else {
+    return res.status(400).send('No session to destroy.');
+  }
 });
 
 /**
  * POST
- * '/username/account'
+ * '/registration'
  * return 201 after successful user account creation
  */
-router.post('/username/account', function(req, res, next) {
+router.post('/registration', function(req, res, next) {
 	let input = {
 		email: req.body.email,
 		username: req.body.username,
@@ -46,7 +73,25 @@ router.post('/username/account', function(req, res, next) {
 		passwordConf: req.body.passwordConf
 	};
 
-	validateLogin(input) ? createUser(input) : res.status(400).send("A field was not filled in.");
+  //use schema.create to insert data into the db
+  User.create(input, function (err, user) {
+    if (err) {
+      return next(400).send('Error creating user.');
+    } else {
+      let response = {
+        user: user,
+        message: 'Successfully created new user account.'
+      };
+      return res.status(201).json(response);
+    }
+  });
+});
+
+router.get('/status', function(req, res, next) {
+  res.status(200).json({
+    status: "status",
+    user: req.session
+  });
 });
 
 /**
@@ -57,24 +102,6 @@ router.post('/username/account', function(req, res, next) {
  */
 function validateLogin(input, newUser) {
 	return newUser ? input.email && input.username && input.password && input.passwordConf : input.email && input.password;
-}
-
-/**
- * [createUser description]
- * @param  {[type]} input [description]
- * @return {[type]}       [description]
- */
-function createUser(input) {
-	//use schema.create to insert data into the db
-	User.create(userData, function (err, user) {
-	  if (err) {
-	  	var err = new Error('Something went wrong.');
-			err.status = 400;
-	    return next(err);
-	  } else {
-	    return res.status(201).send('Successfully created new user account.');
-	  }
-	});
 }
 
 /**

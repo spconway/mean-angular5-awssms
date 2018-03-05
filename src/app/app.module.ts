@@ -14,6 +14,8 @@ import { GlobalMessageService } from './global-message.service';
 import { GlobalMessagesComponent } from './global-messages/global-messages.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { UserService } from './user.service';
+import { LogoutComponent } from './logout/logout.component';
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { RegisterComponent } from './register/register.component';
 		MessageDetailComponent,
 		GlobalMessagesComponent,
 		LoginComponent,
-		RegisterComponent
+		RegisterComponent,
+		LogoutComponent
 	],
 	imports: [
 		BrowserModule,
@@ -33,7 +36,7 @@ import { RegisterComponent } from './register/register.component';
 		HttpClientModule,
     ReactiveFormsModule
 	],
-	providers: [MessageService, GlobalMessageService],
+	providers: [MessageService, GlobalMessageService, UserService],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }
