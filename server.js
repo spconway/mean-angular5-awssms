@@ -34,21 +34,24 @@ var app = express();
 app.use(morgan('combined', { 'stream': logger.stream }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cookieParser('super secret'));
+app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'dist')));
+app.set('trust proxy', 1);
 
 
-app.use(session({
-  cookie: {
-    maxAge: 60000
-  },
-	secret: 'super secret',
-	resave: false,
-	saveUninitialized: false,
-  store: new MongoStore({
-    mongooseConnection: mongooseConnect
-  })
-}));
+// app.use(session({
+//   secret: '$a1yan',
+//   name: 'sessionId',
+//   resave: false,
+//   saveUninitialized: false,
+//   cookie: {
+//     secure: true,
+//     httpOnly: true,
+//     domain: 'localhost',
+//     path: '/',
+//     maxAge: '10000'
+//   }
+// }));
 
 // login validator
 // app.all('*', checkLogin);

@@ -31,7 +31,8 @@ router.post('/login', function(req, res, next) {
         console.log("Error: ", err);
         return res.status(401).send("Authentication unsuccessful.");
       } else {
-        req.session.userId = user._id;
+        // req.session.userId = user._id;
+        // console.log('/login => req.session: ', req.session);
         user.password = null;
         user.passwordConf = null;
         return res.status(200).json(user);
