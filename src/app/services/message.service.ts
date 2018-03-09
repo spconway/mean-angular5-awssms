@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Message } from './message';
+import { Message } from '../objects/message';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { GlobalMessageService } from './global-message.service';
 import { Observable } from 'rxjs/Observable';
@@ -9,7 +9,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 
 @Injectable()
 export class MessageService {
-	private messageUrl = 'messages'; // URL to web api
+	private messageUrl = '/api/messages'; // URL to web api
 
 	/**
 	 * GET service call. Returns messages array

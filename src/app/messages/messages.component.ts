@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Message } from '../message';
-import { MessageService } from '../message.service';
+import { Message } from '../objects/message';
+import { MessageService } from '../services/message.service';
 import { FormGroup, FormControl, Validators } from "@angular/forms";
 
 @Component({

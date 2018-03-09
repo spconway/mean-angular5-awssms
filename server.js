@@ -18,8 +18,7 @@ var mongooseConnect = require('./config/mongoose-connect');
 var logger = require('./config/logger');
 
 /* path setup */
-var users = require('./routes/users');
-var messages = require('./routes/messages');
+var api = require('./routes/api');
 
 /* express initialization */
 var app = express();
@@ -38,26 +37,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'dist')));
 app.set('trust proxy', 1);
 
-
-// app.use(session({
-//   secret: '$a1yan',
-//   name: 'sessionId',
-//   resave: false,
-//   saveUninitialized: false,
-//   cookie: {
-//     secure: true,
-//     httpOnly: true,
-//     domain: 'localhost',
-//     path: '/',
-//     maxAge: '10000'
-//   }
-// }));
-
 // login validator
-// app.all('*', checkLogin);
+app.all('*', loginRequired);
 
-app.use('/users', users);
-app.use('/messages', messages);
+app.use('/api', api);
 
 // Catch all other routes and return the index file
 app.get('*', (req, res) => {
@@ -82,13 +65,16 @@ app.use(function(err, req, res, next) {
   res.send('error');
 });
 
-/* custom login middleware */
-function checkLogin(req, res, next) {
-  if ((req.session && req.session.userId) || req.path == '/') {
-    next();
-  } else {
-    res.redirect('/');
+function loginRequired(req, res, next) {
+  if (req.path === '/api/messages') {
+    if (!req.token) {
+      return res.status(401).json({
+        message: 'Unauthorized user!',
+        redirectTo: '/login'
+      });
+    }
   }
+  next();
 }
 
 module.exports = app;

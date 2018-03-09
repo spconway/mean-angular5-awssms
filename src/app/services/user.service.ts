@@ -7,7 +7,7 @@ import { catchError, tap } from "rxjs/operators";
 
 @Injectable()
 export class UserService {
-  private rootUrl = 'users/';
+  private rootUrl = 'api/';
   private authenticationUrl = 'login';
   private registerUrl = 'registration';
   private statusUrl = 'status';
@@ -56,8 +56,12 @@ export class UserService {
       .interval(15000)
       .flatMap((i) => this.http.get<any>(url))
       .pipe(
-        tap(message => this.log('get status')),
-        catchError(this.handleError('status', []))
+        tap(message => this.log(`get status ${message.status}`)),
+        catchError(error => {
+          Observable.empty();
+          return of(`caught: ${error}`)
+          //this.handleError('status', [])
+        })
       );
   }
 

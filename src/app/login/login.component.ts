@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from "@angular/forms";
-import { UserService } from "../user.service";
+import { AuthorizeService } from "../services/authorize.service";
+import { UserService } from "../services/user.service";
 import { Router } from "@angular/router";
 
 @Component({
@@ -13,16 +14,14 @@ export class LoginComponent implements OnInit {
   loading = false;
 
 	constructor(
-	  private userService: UserService,
+	  private authorizeService: AuthorizeService,
+    private userService: UserService,
     private router: Router
   ) { }
 
 	ngOnInit() {
 	  // reset login status
-	  this.userService.logout();
-	  // set status subscription
-    this.userService.getStatus()
-      .subscribe((res) => console.log("Get status: ", res));
+	  this.authorizeService.logout();
 
 	  // init forms
     this.loginForm = new FormGroup({
@@ -38,10 +37,12 @@ export class LoginComponent implements OnInit {
     if (this.loginForm.valid) {
       this.loading = true;
       let f = this.loginForm.value;
-      this.userService.login(f.username, f.email, f.password)
+      this.authorizeService.login(f.email, f.password)
         .subscribe(
           data => {
             console.log('User authentication returned the following information\n', data);
+            this.userService.getStatus()
+              .subscribe();
             this.router.navigate(['']);
           },
           error => {

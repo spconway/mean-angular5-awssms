@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var User = require('../models/user');
 var logger = require('../config/logger');
+var jwt = require('../config/jsonwebtoken');
 
 /**
  * GET
@@ -31,11 +32,13 @@ router.post('/login', function(req, res, next) {
         console.log("Error: ", err);
         return res.status(401).send("Authentication unsuccessful.");
       } else {
-        // req.session.userId = user._id;
-        // console.log('/login => req.session: ', req.session);
+        let token = jwt.init(user);
         user.password = null;
-        user.passwordConf = null;
-        return res.status(200).json(user);
+        user.messages = null;
+        return res.status(200).json({
+          user: user,
+          token: token
+        });
       }
     });
   }
@@ -89,10 +92,17 @@ router.post('/registration', function(req, res, next) {
 });
 
 router.get('/status', function(req, res, next) {
-  res.status(200).json({
-    status: "status",
-    user: req.session
-  });
+  if(req.token) {
+    res.status(200).json({
+      status: "status: token",
+      token: req.token
+    });
+  } else {
+    res.status(200).json({
+      status: "status: no token",
+      user: req.token
+    });
+  }
 });
 
 /**
